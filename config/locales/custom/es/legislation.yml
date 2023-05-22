@@ -1,0 +1,15 @@
+es:
+  legislation:
+    processes:
+      index:
+        section_header:
+          icon_alt: Icono de propuestas municipales
+          title: Propuestas municipales
+          help: Ayuda sobre propuestas municipales
+        section_footer:
+          title: Ayuda sobre propuestas municipales
+    questions:
+      show:
+        title: Proceso de propuestas municipales
+    proposals:
+      process_title: Proceso de propuestas municipales

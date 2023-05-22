@@ -1,0 +1,10 @@
+es:
+  admin:
+    legislation:
+      processes:
+        index:
+          title: Procesos de propuestas municipales
+        new:
+          title: Crear nuevo proceso de propuestas municipales
+    menu:
+      legislation: Propuestas municipales
