@@ -25,6 +25,7 @@
 # Add your custom gem dependencies here
 
 gem "exiftool_vendored", "~> 12.60.0"
+gem "pdf-reader"
 gem "ruby-ntlm", "~> 0.0.4"
 gem "capistrano-systemd-multiservice",
   require: false,
