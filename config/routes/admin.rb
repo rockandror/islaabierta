@@ -77,7 +77,6 @@ namespace :admin do
       resources :budget_investments, only: [:index, :show, :edit, :update] do
         member { patch :toggle_selection }
 
-        resources :audits, only: :show, controller: "budget_investment_audits"
         resources :milestones, controller: "budget_investment_milestones"
         resources :progress_bars, except: :show, controller: "budget_investment_progress_bars"
       end
@@ -292,6 +291,8 @@ namespace :admin do
       post :execute, on: :collection
       delete :cancel, on: :collection
     end
+
+    resources :audits, only: [:index, :show]
   end
 end
 
@@ -301,10 +302,6 @@ end
 
 resolve "ProgressBar" do |progress_bar|
   [*resource_hierarchy_for(progress_bar.progressable), progress_bar]
-end
-
-resolve "Audit" do |audit|
-  [*resource_hierarchy_for(audit.associated || audit.auditable), audit]
 end
 
 resolve "Widget::Card" do |card, options|

@@ -1,6 +1,6 @@
 <h2><%= t("admin.audits.title") %></h2>
 
-<% if resource.audits.empty? %>
+<% if resource.own_and_associated_audits.empty? %>
   <p><%= t("admin.audits.empty") %></p>
 <% else %>
   <table id="audits">
@@ -35,7 +35,7 @@
             </td>
             <td>
               <%= render Admin::TableActionsComponent.new(audit, actions: []) do |actions| %>
-                <%= actions.action(:show, text: t("shared.show")) %>
+                <%= actions.action(:show, text: t("shared.show"), path: admin_audit_path(audit)) %>
               <% end %>
             </td>
           </tr>
