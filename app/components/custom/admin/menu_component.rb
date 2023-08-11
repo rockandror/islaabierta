@@ -1,13 +1,13 @@
 require_dependency Rails.root.join("app", "components", "admin", "menu_component")
 
 class Admin::MenuComponent
-  alias_method :original_links, :links
+  alias_method :original_default_links, :default_links
 
-  def links
+  def default_links
     custom_links = []
     custom_links = [audits_link] if Rails.application.config.auditing_enabled
 
-    original_links + custom_links
+    original_default_links + custom_links
   end
 
   private
