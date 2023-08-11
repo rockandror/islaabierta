@@ -20,4 +20,15 @@ describe "Admin menu", :admin do
       expect(page).not_to have_link "Changelog"
     end
   end
+
+  scenario "it does not show the audited link for the main tenant when it is in management mode" do
+    allow(Rails.application.config).to receive(:auditing_enabled).and_return(true)
+    allow(Rails.application.config).to receive(:multitenancy_management_mode).and_return(true)
+
+    visit admin_root_path
+
+    within "#admin_menu" do
+      expect(page).not_to have_link "Changelog"
+    end
+  end
 end
