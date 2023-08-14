@@ -7,7 +7,7 @@ gem "acts_as_votable", "~> 0.13.2"
 gem "ahoy_matey", "~> 4.1.0"
 gem "airbrake", "~> 13.0.2"
 gem "ancestry", "~> 4.2.0"
-gem "audited", "~> 5.0.2"
+gem "audited", "~> 5.3.3"
 gem "autoprefixer-rails", "~> 8.2.0"
 gem "bing_translator", "~> 6.2.0"
 gem "cancancan", "~> 3.4.0"
@@ -36,6 +36,7 @@ gem "jquery-fileupload-rails"
 gem "jquery-rails", "~> 4.5.0"
 gem "jquery-ui-rails", "~> 6.0.1"
 gem "kaminari", "~> 1.2.2"
+gem "leaflet-rails", "~> 1.9.3"
 gem "mini_magick", "~> 4.11.0"
 gem "omniauth", "~> 2.1.0"
 gem "omniauth-facebook", "~> 9.0.0"
@@ -66,7 +67,6 @@ gem "wicked_pdf", "~> 2.6.3"
 gem "wkhtmltopdf-binary", "~> 0.12.6"
 
 source "https://rails-assets.org" do
-  gem "rails-assets-leaflet"
   gem "rails-assets-markdown-it", "~> 9.0.1"
 end
 
@@ -85,10 +85,10 @@ end
 
 group :test do
   gem "capybara", "~> 3.37.1"
-  gem "capybara-webmock", "~> 0.6.0"
+  gem "capybara-webmock", "~> 0.7.0"
   gem "email_spec", "~> 2.2.0"
   gem "rspec-rails", "~> 5.1.2"
-  gem "selenium-webdriver", "~> 3.142"
+  gem "selenium-webdriver", "~> 4.0.0"
   gem "simplecov", "~> 0.21.2", require: false
   gem "simplecov-lcov", "~> 0.8.0", require: false
   gem "webdrivers", "~> 4.7.0"
