@@ -2,8 +2,8 @@ require "rails_helper"
 
 describe User do
   describe ".maximum_attempts" do
-    it "returns 20 as default when the secrets aren't configured" do
-      expect(User.maximum_attempts).to eq 20
+    it "returns 5 as default when the secrets aren't configured" do
+      expect(User.maximum_attempts).to eq 5
     end
 
     context "when secrets are configured" do
@@ -35,8 +35,8 @@ describe User do
   end
 
   describe ".unlock_in" do
-    it "returns 1 as default when the secrets aren't configured" do
-      expect(User.unlock_in).to eq 1.hour
+    it "returns 0.5 as default when the secrets aren't configured" do
+      expect(User.unlock_in).to eq 0.5.hour
     end
 
     context "when secrets are configured" do

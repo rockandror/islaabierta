@@ -4,11 +4,11 @@ class User
   devise :lockable if Rails.application.config.devise_lockable
 
   def self.maximum_attempts
-    (Tenant.current_secrets.dig(:security, :lockable, :maximum_attempts) || 20).to_i
+    (Tenant.current_secrets.dig(:security, :lockable, :maximum_attempts) || 5).to_i
   end
 
   def self.unlock_in
-    (Tenant.current_secrets.dig(:security, :lockable, :unlock_in) || 1).to_i.hours
+    (Tenant.current_secrets.dig(:security, :lockable, :unlock_in) || 0.5).to_f.hours
   end
 
   def self.password_complexity
