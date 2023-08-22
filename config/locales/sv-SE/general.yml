@@ -201,7 +201,7 @@ sv:
       accessibility: Tillgänglighet
       conditions: användarvillkoren
       consul: Programvaran CONSUL
-      consul_url: https://github.com/consul/consul
+      consul_url: https://github.com/consuldemocracy/consuldemocracy
       copyright: CONSUL, %{year}
       description: Den här webbplatsen använder %{consul} som är %{open_source}.
       open_source: en plattform med öppen källkod
@@ -832,7 +832,7 @@ sv:
       published: Publicerat
       see: "Visa förslag"
       actions: Åtgärder
-      retired_help_text: Dashboard är inte tillgängligt för tillbakadragna förslag
+      retired_help_text: Dashboard är inte tillgänglig för tillbakadragna förslag
   votes:
     agree: Jag håller med
     agree_label: "Jag säger ja till %{title}"
