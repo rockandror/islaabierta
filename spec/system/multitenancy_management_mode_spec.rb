@@ -26,7 +26,7 @@ describe "Multitenancy management mode", :admin do
   scenario "redirects root path requests to the admin tenants path" do
     visit root_path
 
-    expect(page).to have_content "CONSUL ADMINISTRATION", normalize_ws: true
+    expect(page).to have_content "CONSUL DEMOCRACY ADMINISTRATION", normalize_ws: true
     expect(page).to have_content "Multitenancy"
     expect(page).not_to have_content "Most active proposals"
   end
