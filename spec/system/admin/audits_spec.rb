@@ -8,7 +8,7 @@ describe "Admin change log" do
   end
 
   context "Investments Participatory Budgets" do
-    scenario "Changes" do
+    scenario "Changes", :consul do
       investment = create(:budget_investment, title: "Good old times")
 
       visit admin_budget_budget_investment_path(investment.budget, investment)
