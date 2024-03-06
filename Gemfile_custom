@@ -25,10 +25,5 @@
 #
 # Add your custom gem dependencies here
 
-gem "exiftool_vendored", "~> 12.60.0"
-gem "pdf-reader"
 gem "ruby-ntlm", "~> 0.0.4"
-gem "capistrano-systemd-multiservice",
-  require: false,
-  git: "https://github.com/groovenauts/capistrano-systemd-multiservice.git",
-  branch: "dependabot/bundler/capistrano-gte-3.7.0-and-lt-3.18.0"
+gem "capistrano-systemd-multiservice", "~> 0.1.0.beta13", require: false
