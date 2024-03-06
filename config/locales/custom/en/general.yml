@@ -1,4 +1,0 @@
-en:
-  account:
-    show:
-      last_sign_in: "Last login: %{last_sign_in_at} from IP %{last_sign_in_ip}"
