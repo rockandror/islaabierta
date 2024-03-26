@@ -1,6 +1,6 @@
 class Admin::MenuComponent < ApplicationComponent
   include LinkListHelper
-  delegate :can?, to: :helpers
+  use_helpers :can?
 
   def links
     if Rails.application.multitenancy_management_mode?
