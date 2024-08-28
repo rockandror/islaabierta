@@ -13,10 +13,17 @@
       </p>
     </div>
 
-    <div class="footer-sections small-12 large-8 column">
+    <div class="footer-sections small-12 large-6 column">
       <div class="small-12 medium-4 column">
         <%= link_to t("layouts.footer.participation_title"), root_path, class: "title" %>
         <p><%= t("layouts.footer.participation_text") %></p>
+      </div>
+
+      <div class="collaboration small-12 medium-4 column">
+        <span class="collaboration-text"><%= t("layouts.footer.collaboration.text") %></span>
+        <%= link_to "https://cabildoabierto.tenerife.es/" do %>
+          <%= image_tag(image_path_for("logo_cabildo.png"), alt: t("layouts.footer.collaboration.alt_cabildo")) %>
+        <% end %>
       </div>
     </div>
   </div>
