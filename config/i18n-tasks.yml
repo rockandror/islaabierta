@@ -125,6 +125,7 @@ ignore_missing:
   - "devise.failure.invalid"
   - "devise.registrations.destroyed"
   - "devise.password_expired.*"
+  - "layouts.footer.collaboration.*"
 
 ## Consider these keys used:
 ignore_unused:

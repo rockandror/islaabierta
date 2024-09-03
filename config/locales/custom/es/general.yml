@@ -1,4 +1,8 @@
 es:
   layouts:
+    footer:
+      collaboration:
+        alt_cabildo: "Cabildo de Tenerife"
+        text: "Colabora"
     header:
       collaborative_legislation: "Propuestas municipales"
